@@ -1,1 +1,3 @@
 # NAPREDNO-RADNIK
+moguci zadatak na ispitu z naprednoga(kolko ga se zmislim)
+treba: klasa firma i radnik, funkcija dodavanja radnika v firmu, radnik more biti sam v jednoj firmi, more dobiti otkaza, funkcija ispisa radnika v firmi...
