@@ -1,0 +1,154 @@
+using System.Collections.Generic;
+using System.Security.AccessControl;
+
+internal class Program
+{
+    /*class Radnik
+    {
+        public string ImeIPrezime = "defaultno ime";
+        public string mjestoRadnje = "";
+
+        public Radnik(string a)
+        {
+            ImeIPrezime=a;
+            
+        }
+
+        public void unesiRadnika(string a)
+        {
+            ImeIPrezime=a;
+        }
+        public void ispis()
+        {
+            Console.Write(ImeIPrezime);
+            Console.Write(" ");
+            Console.WriteLine(mjestoRadnje);
+        }
+    }
+
+    class Firma{
+        public string naziv = "";
+        List<Radnik> radnici=new List<Radnik>();
+        public void dodajZaposlenika(Radnik a)
+        {
+            if (a.mjestoRadnje == "") { 
+            radnici.Add(a);
+            a.mjestoRadnje = naziv;
+            }
+
+            
+        }
+        public void test()
+        {
+            //radnici.Add(new Radnik());
+        }
+        public void ispisiRadnike()
+        {
+            foreach(Radnik r in radnici)
+            {
+                Console.Write(r.ImeIPrezime);
+                Console.Write(" ");
+                Console.WriteLine(r.mjestoRadnje);
+            }
+        }
+
+        public void dajOtkaz(Radnik a)
+        {
+            foreach(Radnik r in radnici)
+            {
+                if(r.ImeIPrezime == a.ImeIPrezime)
+                {
+                    Console.Write(r.ImeIPrezime);
+                    Console.WriteLine(" uklonjen");
+                    r.mjestoRadnje = "";
+                    radnici.Remove(r);
+                    break;
+
+                }
+            }
+        }
+
+        public void Otkaztest(string a)
+        {
+            foreach(Radnik r in radnici)
+            {
+                if (r.ImeIPrezime == a)
+                {
+                    Console.Write(r.ImeIPrezime);
+                    Console.WriteLine(" uklonjen");
+                    r.mjestoRadnje = "";
+                    radnici.Remove(r);
+                    break;
+                }
+            }
+        }
+
+        public void DodajTest(string a)
+        {
+
+            radnici.Add(new Radnik(a));
+            foreach(Radnik r in radnici)
+            {
+                r.mjestoRadnje = naziv;
+            }
+            
+        }
+
+    }
+    private static void Main(string[] args){
+    Firma mtc = new Firma();
+        mtc.naziv = "mtc";
+        mtc.DodajTest("Stefan Granatir");
+        mtc.DodajTest("mamic");
+        mtc.ispisiRadnike();
+        mtc.Otkaztest("Stefan Granatir");
+        mtc.ispisiRadnike();
+
+        /*Radnik r1 = new Radnik();
+        Radnik r2 = new Radnik();
+        Radnik r3 = new Radnik();
+        Radnik r4 = new Radnik();
+        Radnik r5 = new Radnik();
+
+        Firma metss =new Firma();
+
+        r1.unesiRadnika("Ivica Todoric");
+        r2.unesiRadnika("Milan Bandic");
+        r3.unesiRadnika("Zdravko Mamic");
+        r4.unesiRadnika("Kale Djedaj");
+        r5.unesiRadnika("Omer Nadarevic");
+
+        r3.mjestoRadnje = "a";
+
+        metss.naziv = "metss";
+        metss.dodajZaposlenika(r1);
+        metss.dodajZaposlenika(r2);
+        metss.dodajZaposlenika(r3);
+        metss.dodajZaposlenika(r4);
+        
+        metss.dodajZaposlenika(r5);
+        //metss.ispisiRadnike();
+        List<Radnik> list = new List<Radnik>();
+        list.Add(r1);
+        list.Add(r2);
+        list.Add(r3);
+        list.Add(r4);
+        list.Add(r5);
+
+        foreach (Radnik r in list)
+        {
+            r.ispis();
+        }
+        metss.ispisiRadnike();
+        Console.WriteLine();
+        metss.dajOtkaz(r2);
+        Console.WriteLine();
+        metss.ispisiRadnike();
+        Console.WriteLine();
+        foreach (Radnik r in list)
+        {
+            r.ispis();
+        }*/
+    }
+}
+    
